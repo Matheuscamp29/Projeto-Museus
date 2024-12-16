@@ -1,0 +1,8 @@
+.fundo {
+    background:linear-gradient(to top, #2c5364,#244552,#162c34);
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    bottom: 0; 
+    z-index: -1; 
+  }

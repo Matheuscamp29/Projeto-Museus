@@ -1,0 +1,232 @@
+.scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    background-color: #f0f0f0 transparent;
+    overflow: hidden;
+  }
+  
+  .barreira {
+    position: absolute;
+    width: 100vw;
+    height: 25vh;
+    background-size: cover;
+    bottom: -25vh; /* Posição inicial abaixo da tela */
+    left: calc(50% - 18vw);
+    z-index: 0;
+    animation: moveBarreira 0.7s ease forwards; /* Nome da animação, duração, função de easing e preenchimento */
+  }
+  
+  @keyframes moveBarreira {
+    to {
+      bottom: 2vh; /* Posição final desejada */
+    }
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .bola{
+    display: flex;
+    position: absolute;
+  }
+  .t{
+    display: flex;
+    position: absolute;
+    height: 15vw;
+    top: calc(50% - 6vw);
+  }
+  .app-name-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Raleway', sans-serif;
+
+
+    font-size: 16px;
+    margin: 0;
+    height: 100vh;
+    top: -60vw;
+  }
+  
+  .app-name {
+    display: flex;
+    position: absolute;
+    font-size: 8vw;
+    top: calc(50% - -19vw);
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 2s ease 0s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .app-name1 {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    top: calc(50% - -30vw);
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp1 2s ease 3s forwards;
+  }
+  
+  @keyframes fadeInUp1 {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #svg{
+    height: 30vw;
+    transform: rotate(45deg);   
+     width: 30vw;
+    stroke: #9d1f1f;
+    fill-opacity: 0;
+    stroke-width: 10px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+    
+  }
+  
+  @keyframes draw{
+    0% {
+        stroke-dashoffset: 4500;
+    }
+    100%{
+        stroke-dashoffset:0 ;
+    }
+  }
+  
+  
+  
+  .expo {
+    position: absolute;
+    width: 10vw;
+    height: 25vh;
+    bottom: -25vh;    
+    z-index: -1;
+
+    
+    left: calc(50% - 31vw); /* Centralizado e com deslocamento de 15vw para a esquerda */
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .expo.active {
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+  
+  .tamanho {
+    width: 65vw;
+    height: 65vw;
+  }
+  .tamanho1 {
+    width: 40vw;
+    height: 40vw;
+  }
+  
+   
+  .expo1 {
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+  
+  .expo2 {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .expo3 {
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .expo4 {
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+  #camera-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  #video {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    max-height: 80%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+  
+  #capture-button,
+  #close-camera-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 4vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #capture-button:hover,
+  #close-camera-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+
+
+
+
+

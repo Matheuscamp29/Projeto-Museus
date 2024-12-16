@@ -1,0 +1,217 @@
+/*arquivo com as funcionalidades da pagina "home"*/
+body {
+
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*container de todas as painas que esta deixando tudo centralizado*/
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 0;
+}
+/*circulo principal */
+.circle1 {
+  display: grid;
+  place-items: center;
+  width: 85vw;
+  height: 85vw;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #4595DD 0%, #3066BE 100%);
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+/*botao identificar alguma exposição*/
+.button-container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  position: fixed;
+  bottom: 80px; 
+  width: 100%;
+  z-index: 1; 
+}
+.button-foto1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vw;
+  width: 40vw; 
+  border-radius: 20px;
+  font-size: 5vw;
+  border: none;
+  background-color: #007bff;
+
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.maxs{
+height: 7vw;
+width: 7vw;
+}
+.button7{
+  position: absolute;
+  cursor: pointer;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  height: 13vw;
+  width: 20vw ;
+  z-index: 2;
+  border-radius: 20px;
+  bottom: 80px;
+  right: 5vw;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+
+
+
+/*variavel "y" e "resumo" que vai informar o cliente de qual a exposição e um 
+breve resumo do que é essa exposição*/
+.content-above-circle,
+.content-under-circle {
+  position: absolute;
+  text-align: center;
+  color: azure;
+  font-family: "Helvetica", sans-serif;
+  font-size: 9vw;
+  width: 100%;
+  
+}
+
+.content-above-circle {
+  top: -15vw;
+}
+
+.content-under-circle {
+  font-size: 5vw;
+  bottom: -18vw; 
+}
+
+/*linhas que estao girando dentro do circle1*/
+.linha,
+.linha2,
+.linha3,
+.linha4,
+.linha5,
+.linha6,
+.linha7 {
+  
+  position: absolute;
+  border-radius: 50%;
+  border: 2vw solid;
+  border-color: aliceblue transparent transparent;
+  background-color: #616971 transparent;
+}
+
+.linha {
+  max-width: 140px;
+  max-height: 140px;
+  width: 28vw;
+  height: 28vw;
+  animation: rotateCircle 4.5s linear infinite;
+}
+
+.linha2 {
+  max-width: 170px;
+  max-height: 170px;
+  width: 35vw;
+  height: 35vw;
+  animation: rotateCircle 3s linear infinite;
+}
+
+.linha3 {
+  max-width: 200px;
+  max-height: 200px;
+  width: 42vw;
+  height: 42vw;
+  animation: rotateCircle 6.5s linear infinite;
+}
+
+.linha4 {
+  max-width: 230px;
+  max-height: 230px;
+  width: 49vw;
+  height: 49vw;
+  animation: rotateCircle 5s linear infinite;
+}
+
+.linha5 {
+  max-width: 260px;
+  max-height: 260px;
+  width: 56vw;
+  height: 56vw;
+  animation: rotateCircle 2.5s linear infinite;
+}
+
+.linha6 {
+  max-width: 290px;
+  max-height: 290px;
+  width: 63vw;
+  height: 63vw;
+  animation: rotateCircle 6s linear infinite;
+}
+
+.linha7 {
+  max-width: 320px;
+  max-height: 320px;;
+  width: 70vw;
+  height: 70vw;
+  animation: rotateCircle 8s linear infinite;
+}
+ /*animaçoes das linhas para girar mais rapido qunado a pessoa pode fazer uma pergunta */
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.linha.rotateCircleFast {
+  animation: rotateCircleFast 1s ease infinite;
+}
+.linha2.rotateCircleFast {
+  animation: rotateCircleFast 1s ease infinite;
+}
+.linha3.rotateCircleFast {
+  animation: rotateCircleFast 1s ease infinite;
+}
+.linha4.rotateCircleFast {
+  animation: rotateCircleFast 1s ease infinite;
+}
+.linha5.rotateCircleFast {
+  animation: rotateCircleFast 1s ease infinite;
+}
+.linha6.rotateCircleFast {
+  animation: rotateCircleFast 1s ease infinite;
+}
+.linha7.rotateCircleFast {
+  animation: rotateCircleFast 1s ease infinite;
+}
+
+@keyframes rotateCircleFast {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ 
+
+
+
+

@@ -1,0 +1,23 @@
+
+/*arquivo com as funcionalidades do header*/
+
+
+.logo{
+    display: flex;
+    background-color: rgb(48, 52, 59);
+    left: 0px;
+    margin: 2vw;
+    padding: 1vw;
+    height: 4vh;
+    width: 4vh;
+    border-radius: 8px;
+}
+
+.inteiro{
+   align-self: baseline;
+   position: fixed;
+   background-color: #151c24;
+   top: 0;
+   
+   width: 100%;
+}

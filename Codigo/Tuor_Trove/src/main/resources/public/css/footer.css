@@ -1,0 +1,110 @@
+
+footer {
+    background-color: #27303a;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  
+  .footer-buttons {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .footer-buttons {
+      flex-direction: row;
+    }
+  
+    .footer-button {
+      margin: 1px 0;
+      width: 45px;
+      height: 45px;
+    }
+  
+    .footer-button {
+      min-width: 30px;
+      min-height: 30px;
+    }
+  }
+  .footer-button{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0 5px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease;
+}
+.button-label {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 11px;
+  color: white;
+  font-family: "Helvetica", sans-serif;
+  opacity: 0; 
+  transition: opacity 0.7s ease-out; 
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: calc(100% + 5px); 
+  width: 100%;
+}
+
+
+
+
+.footer-button .button-label {
+  position: absolute;
+  bottom: -15px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.footer-button.selected {
+    transform: translateY(-15px);
+}
+
+.footer-button img {
+    max-width: 25px;
+    max-height: 25px; 
+    pointer-events: none;
+}
+
+.content {
+  margin-top: 60px; 
+}
+
+
+
+.about-button::after {
+  content: "About";
+}
+.memories-button::after {
+  content: "Memorias";
+}
+.services-button::after {
+  content: "Services";
+}
+.settings-button::after {
+  content: "Settings";
+}
+
