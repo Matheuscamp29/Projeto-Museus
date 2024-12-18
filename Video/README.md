@@ -5,13 +5,13 @@ Execute o arquivo aplicacao. Em seguida, abra seu navegador e acesse "http://loc
 
 ## Cadastro de museus (proprietario do museu)
 
-1- Cadastrar museus
+1- Cadastrar museus (nome, descrição, localizção)
 
-2- Tirar fotos das exposições
+2- Tirar fotos das exposições (aproximadamente 15 de cada exposição)
 
 3- Treinar a IA com as fotos (Azure custom vision)
 
-4- Cadastrar exposições com o mesmo nome rotulado no treinamento 
+4- Cadastrar exposições com o mesmo nome rotulado no treinamento (nome, descrição)
 
 ## Funcionamento para usuarios
 
